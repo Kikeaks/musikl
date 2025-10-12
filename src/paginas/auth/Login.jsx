@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/musik.png";
+import logo from "../../assets/musikl.png";
 import { Link } from "react-router-dom";
 import { useUsuarios } from "../../hooks/useUsuarios.js";
 
@@ -13,7 +13,7 @@ const Login = () => {
   };
   return (
     <div className="flex flex-col items-center justify-center">
-      <img src={logo} title="musik-w" className="size-32 md:size-44 m-12" />
+      <img src={logo} title="musik-w" className="max-w-72 md:max-w-96 h-auto m-12" />
       {!confirmacionLogin ? (
         <h1 className="text-3xl font-bold leading-tight tracking-tight md:text-5xl text-white">
           ¡Te echábamos de menos!
@@ -83,7 +83,7 @@ const Login = () => {
         ) : (
           <div className="text-center">
             <p>Redigiriendo a la página principal...</p>
-            <p className="mt-2 font-bold">Gracias por usar musiK :)</p>
+            <p className="mt-2 font-bold">Gracias por usar musi𝗸l :)</p>
           </div>
         )}
       </div>

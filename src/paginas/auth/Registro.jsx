@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../../assets/musik.png";
+import logo from "../../assets/musikl.png";
 import { Link, useNavigate } from "react-router-dom";
 import { useUsuarios } from "../../hooks/useUsuarios";
 
@@ -46,10 +46,10 @@ const Registro = () => {
 
   return (
     <div className="flex flex-col items-center justify-center">
-      <img src={logo} title="musik-w" className="size-32 md:size-44 m-12" />
+      <img src={logo} title="musik-w" className="max-w-72 md:max-w-96 h-auto m-12" />
       {!registroCorrecto ? (
-        <h1 className="text-3xl font-bold leading-tight tracking-tight md:text-5xl text-white">
-          Bienvenid@ a musiK :)
+        <h1 className="text-2xl font-bold leading-tight tracking-tight md:text-5xl text-white">
+          Regístrate para empezar a disfrutar
         </h1>
       ) : (
         <h1 className="text-3xl font-bold leading-tight tracking-tight md:text-5xl text-white">
@@ -64,7 +64,7 @@ const Registro = () => {
             proporcionada.
           </p>
           <p className="mt-2">Redigiriendo a la página principal...</p>
-          <p className="mt-2 font-bold">Gracias por usar musiK :)</p>
+          <p className="mt-2 font-bold">Gracias por usar musi𝗸l :)</p>
         </div>
       ) : (
         <div className="w-full max-w-md p-6">
@@ -145,7 +145,7 @@ const Registro = () => {
             </div>
             {error && <p className="text-red-500 text-center">{error}</p>}
             <button
-              className="w-full text-white font-medium rounded-lg hover:border-white hover:bg-neutral-400 text-center text-base duration-300 ease-in cursor-pointer group bg-highlight focus:outline-none"
+              className="w-full text-white font-medium rounded-lg hover:border-white text-center text-base focus:border-highlight focus:ring-highlight duration-300 ease-in cursor-pointer group bg-highlight"
               onClick={(e) => manejoRegistro(e)}
             >
               Registrar

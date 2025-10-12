@@ -1,2 +1,3 @@
-# musiK
-Repositorio con los archivos del PFC de DAW 23/24.
+# musi𝗸l
+
+Una red social musical desarrollada con React.js y Supabase.

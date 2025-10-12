@@ -4,7 +4,7 @@ import React from "react";
 const CancionCard = ({ cancion, onCancionClick }) => {
   return (
     <div
-      className="cancion shadow-lg p-3 rounded hover:bg-neutral-800 duration-300 ease-in cursor-pointer group bg-cards"
+      className="cancion shadow-lg p-3 rounded hover:bg-neutral-800 hover:text-highlight duration-300 ease-in cursor-pointer group bg-cards"
       onClick={onCancionClick}
     >
       {/* Imagen de la portada del álbum */}

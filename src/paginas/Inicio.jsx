@@ -1,5 +1,5 @@
 import React from "react";
-import musiK from "../assets/musik.png";
+import musiK from "../assets/musikl.png";
 import gente from "../assets/gente.png";
 import playlists from "../assets/playlists.png";
 import ritmo from "../assets/ritmo.png";
@@ -15,7 +15,7 @@ const Inicio = () => {
   const { sesionIniciada } = useUsuarios();
   return (
     <div className="p-6 bg-fondo min-h-screen flex flex-col items-center">
-      <img className="size-32 md:size-44 m-12" src={musiK} />
+      <img className="max-w-72 md:max-w-96 h-auto m-12" src={musiK} />
       <p className="text-center text-neutral-400 mb-8 max-w-2xl">
         Una plataforma donde la melodía encuentra su hogar y tus oídos son los
         invitados de honor.
@@ -90,7 +90,7 @@ const Inicio = () => {
                 navigate("/explorar");
               }
             }}
-            className="text-white py-2 px-4 rounded hover:bg-pink-600 transition-colors duration-300"
+            className="text-white py-2 px-4 rounded hover:border-white transition-colors duration-300"
           >
             Comienza tu aventura musical
           </button>

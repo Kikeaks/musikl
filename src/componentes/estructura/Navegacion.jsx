@@ -1,12 +1,10 @@
-import React, { Fragment, useState } from "react";
-import logo from "../../assets/musik.png";
+import { Fragment, useState } from "react";
+import logo from "../../assets/musikl.png";
 import avatarDefault from "../../assets/usuario.jpg";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faHouse,
   faMagnifyingGlass,
-  faMusic,
   faBars,
   faRightFromBracket,
   faUser,
@@ -57,7 +55,7 @@ const Navegacion = () => {
       <nav className="flex justify-between items-center px-4 py-2 h-24">
         {/* Logo de la aplicación */}
         <div>
-          <img src={logo} title="musik-w" className="size-12" />
+          <img src={logo} title="musik-w" className="max-h-6 md:max-h-8 w-auto" />
         </div>
         {/* Icono de menú para dispositivos móviles */}
         <div className="md:hidden">

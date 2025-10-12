@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 a:hover {
-  color: #FF4081;
+  color: #02cdcd;
 }
 
 body {
@@ -12,7 +12,7 @@ body {
   min-height: 100vh;
   background-color: #121212;
   color: white;
-  font-family: 'Reddit Sans';
+  font-family: 'Space Grotesk';
 }
 
 h1 {
@@ -27,13 +27,13 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #FF4081;
+  background-color: #02cdcd;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 
 button:hover {
-  border-color: #FF4081;
+  border-color: #02cdcd;
 }
 
 button:focus,
