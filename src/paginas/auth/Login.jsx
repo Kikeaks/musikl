@@ -15,11 +15,11 @@ const Login = () => {
     <div className="flex flex-col items-center justify-center">
       <img src={logo} title="musik-w" className="max-w-72 md:max-w-96 h-auto m-12" />
       {!confirmacionLogin ? (
-        <h1 className="text-3xl font-bold leading-tight tracking-tight md:text-5xl text-white">
+        <h1 className="text-2xl font-bold leading-tight tracking-tight md:text-5xl text-white">
           ¡Te echábamos de menos!
         </h1>
       ) : (
-        <h1 className="text-3xl font-bold leading-tight tracking-tight md:text-5xl text-white">
+        <h1 className="text-2xl font-bold leading-tight tracking-tight md:text-5xl text-white">
           Sesión iniciada
         </h1>
       )}

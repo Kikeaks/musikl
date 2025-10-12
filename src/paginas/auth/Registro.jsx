@@ -48,11 +48,11 @@ const Registro = () => {
     <div className="flex flex-col items-center justify-center">
       <img src={logo} title="musik-w" className="max-w-72 md:max-w-96 h-auto m-12" />
       {!registroCorrecto ? (
-        <h1 className="text-2xl font-bold leading-tight tracking-tight md:text-5xl text-white">
+        <h1 className="text-2xl text-center font-bold leading-tight tracking-tight md:text-5xl text-white">
           Regístrate para empezar a disfrutar
         </h1>
       ) : (
-        <h1 className="text-3xl font-bold leading-tight tracking-tight md:text-5xl text-white">
+        <h1 className="text-2xl font-bold leading-tight tracking-tight md:text-5xl text-white">
           Registro correcto
         </h1>
       )}
