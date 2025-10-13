@@ -159,6 +159,13 @@ const PerfilUsuario = () => {
             Crear playlist
           </button>
         )}
+        {/* Muestra la cuadrícula de playlists */}
+        {playlistsPerfil && playlistsPerfil.length > 0 && (
+          <>
+            <h2 className="font-bold text-xl mt-4 ml-4">Listas</h2>
+            <PlaylistsCuadricula playlists={playlistsPerfil} origen="bbdd" />
+          </>
+        )}
         {/* Muestra la cuadrícula de seguidores */}
         {perfil.seguidores.length > 0 && (
           <>
@@ -172,16 +179,6 @@ const PerfilUsuario = () => {
           <>
             <h2 className="font-bold text-xl mt-4 ml-4">Siguiendo</h2>
             <PerfilesCuadricula perfiles={seguidos} />
-          </>
-        )}
-
-        {/* Muestra la cuadrícula de playlists */}
-        {playlistsPerfil && playlistsPerfil.length > 0 && (
-          <>
-            <h2 className="font-bold text-xl mt-4 ml-4">
-              Listas de reproducción
-            </h2>
-            <PlaylistsCuadricula playlists={playlistsPerfil} origen="bbdd" />
           </>
         )}
       </div>

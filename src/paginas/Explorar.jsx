@@ -81,12 +81,20 @@ const Explorar = () => {
           Canciones
         </button>
         <button
-          onClick={() => handleCategoriaChange("albumes")}
+          onClick={() => handleCategoriaChange("álbumes")}
           className={`px-4 py-2 rounded text-white ${
-            categoria === "albumes" ? "bg-highlight" : "bg-cards"
+            categoria === "álbumes" ? "bg-highlight" : "bg-cards"
           }`}
         >
           Álbumes
+        </button>
+        <button
+          onClick={() => handleCategoriaChange("listas")}
+          className={`px-4 py-2 rounded text-white ${
+            categoria === "listas" ? "bg-highlight" : "bg-cards"
+          }`}
+        >
+          Listas
         </button>
         <button
           onClick={() => handleCategoriaChange("artistas")}
@@ -97,20 +105,12 @@ const Explorar = () => {
           Artistas
         </button>
         <button
-          onClick={() => handleCategoriaChange("playlists")}
-          className={`px-4 py-2 rounded text-white ${
-            categoria === "playlists" ? "bg-highlight" : "bg-cards"
-          }`}
-        >
-          Playlists
-        </button>
-        <button
           onClick={() => handleCategoriaChange("usuarios")}
           className={`px-4 py-2 rounded text-white ${
             categoria === "usuarios" ? "bg-highlight" : "bg-cards"
           }`}
         >
-          Perfiles
+          Usuarios
         </button>
       </div>
 
@@ -128,7 +128,7 @@ const Explorar = () => {
               <CancionesCuadricula canciones={cancionesBuscadas} />
             </>
           )}
-          {(categoria === "todo" || categoria === "albumes") && (
+          {(categoria === "todo" || categoria === "álbumes") && (
             <>
               <h3 className="font-bold text-lg sm:text-xl mt-4 mx-4">
                 Álbumes - Singles - E.P.
@@ -144,10 +144,10 @@ const Explorar = () => {
               <ArtistasCuadricula artistas={artistasBuscados} />
             </>
           )}
-          {(categoria === "todo" || categoria === "playlists") && (
+          {(categoria === "todo" || categoria === "listas") && (
             <>
               <h3 className="font-bold text-lg sm:text-xl mt-4 mx-4">
-                Listas de reproducción
+                Listas
               </h3>
               <PlaylistsCuadricula
                 playlists={playlistsBuscadas}
@@ -187,7 +187,7 @@ const Explorar = () => {
           </div>
           <div>
             <h2 className="font-bold text-xl mt-4 mx-4 sm:text-2xl">
-              Listas de reproducción destacadas
+              Listas destacadas
             </h2>
             <PlaylistsCuadricula
               playlists={playlistsDestacadas}
